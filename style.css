@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 300 70px/1 'Lato', sans-serif;
+  color: #777;
+  background: #eee;
+}
+
+#clock {
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -175px;
+  text-align: center;
+  overflow: hidden;
+  user-select: none;
+}
+
+#clock span {
+  display: inline-block;
+  font-size: 50px;
+  padding: 10px;
+  position: relative;
+  width: 50px;
+}
+
+#clock span:nth-child(2),
+#clock span:nth-child(4) {
+  border-right: 1px solid #aaa;
+}
